@@ -21,6 +21,8 @@
 .foreground {
 	z-index: 3;
 	padding-top: 3em;
+	font-size: 250%;
+	text-shadow: #000 1px 0 10px;
 }
 
 .gradient-stage {
@@ -31,4 +33,19 @@
 .background-image-stage {
 	background-color: black;
 	z-index: 1;
+	background: url("https://images.unsplash.com/photo-1513829596324-4bb2800c5efb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80") no-repeat;
+	background-size: cover;
+}
+
+.edit-panel {
+	display: flex;
+	justify-content: center;
+}
+
+.edit-section {
+	margin-right: 2em;
+	
+	input {
+		display: block;
+	}
 }

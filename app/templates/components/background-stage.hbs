@@ -3,22 +3,61 @@
 	<GradientStage 
 		@color1={{color1}} 
 		@color2={{color2}} 
-		@opacity={{opacity}}
+		@opacity={{gradOpacity}}
 		@gradDegree={{gradDegree}}
 		>
 	</GradientStage>
 	<div class="background-image-stage panel"></div>
 </main>
-<section class="tools-panel">
-	<input 
-		type="range" 
-		id="gradient-degree" 
-		name="gradient-degree" 
-		min="0" 
-		max="360" 
-		step="1"
-		value={{gradDegree}}
-		onchange={{action "updateGradDegree"}}
-	>
-	<label for="gradient-degree">Gradient Degree {{gradDegree}}</label>
+<section class="edit-panel">
+	<div class="edit-message edit-section">
+		<h3>Message</h3>
+		<input 
+			type="text" 
+			id="edit-message" 
+			name="edit-message" 
+			value={{message}}
+			onkeyup={{action "updateMessage"}}
+		>
+	</div>
+	<div class="edit-gradient-degree edit-section">
+		<h3>Gradient Degree</h3>
+		<input 
+			type="range" 
+			id="gradient-degree" 
+			name="gradient-degree" 
+			min="0" 
+			max="360" 
+			step="10"
+			value={{gradDegree}}
+			onchange={{action "updateGradDegree"}}
+		>
+		<input 
+			type="number" 
+			id="gradient-degree-number" 
+			name="gradient-degree-number" 
+			value={{gradDegree}}
+			onchange={{action "updateGradDegree"}}
+		>
+	</div>
+	<div class="edit-gradient-degree edit-section">
+		<h3>Gradient Opacity</h3>
+		<input 
+			type="range" 
+			id="gradient-opacity" 
+			name="gradient-opacity" 
+			min="0" 
+			max="1" 
+			step=".1"
+			value={{gradOpacity}}
+			onchange={{action "updateGradOpacity"}}
+		>
+		<input 
+			type="number" 
+			id="gradient-opacity-number" 
+			name="gradient-opacity-number" 
+			value={{gradOpacity}}
+			onchange={{action "updateGradOpacity"}}
+		>
+	</div>
 </section>
