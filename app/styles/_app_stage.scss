@@ -5,4 +5,26 @@
 	margin-top: 2em;
 	background-color: white;
 	box-shadow: 2px 3px 36px 0px rgba(0,0,0,0.3);
+	overflow: hidden;
+	position: relative;
+}
+
+.panel {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.foreground {
+
+}
+
+.gradient-stage {
+	background-color: rgba(red, .2);
+}
+
+.background-image-stage {
+	background-color: rgba(yellow, .2);
 }
