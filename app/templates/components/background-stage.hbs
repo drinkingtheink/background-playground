@@ -1,5 +1,24 @@
 <main class="background-playground-stage">
 	<div class="foreground panel">{{message}}</div>
-	<GradientStage></GradientStage>
+	<GradientStage 
+		@color1={{color1}} 
+		@color2={{color2}} 
+		@opacity={{opacity}}
+		@gradDegree={{gradDegree}}
+		>
+	</GradientStage>
 	<div class="background-image-stage panel"></div>
 </main>
+<section class="tools-panel">
+	<input 
+		type="range" 
+		id="gradient-degree" 
+		name="gradient-degree" 
+		min="0" 
+		max="360" 
+		step="1"
+		value={{gradDegree}}
+		onchange={{action "updateGradDegree"}}
+	>
+	<label for="gradient-degree">Gradient Degree {{gradDegree}}</label>
+</section>

@@ -7,6 +7,7 @@
 	box-shadow: 2px 3px 36px 0px rgba(0,0,0,0.3);
 	overflow: hidden;
 	position: relative;
+	color: white;
 }
 
 .panel {
@@ -18,13 +19,16 @@
 }
 
 .foreground {
-
+	z-index: 3;
+	padding-top: 3em;
 }
 
 .gradient-stage {
 	background-color: rgba(red, .2);
+	z-index: 2;
 }
 
 .background-image-stage {
-	background-color: rgba(yellow, .2);
+	background-color: black;
+	z-index: 1;
 }
