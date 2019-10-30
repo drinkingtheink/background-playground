@@ -1,11 +1,11 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-	message: 'Lets Play With Styles',
+	message: 'Compose Yourself a Lovely Background',
 	color1: 'white',
 	color2: 'red',
-	gradOpacity: .5,
-	gradDegree: 17,
+	gradOpacity: .7,
+	gradDegree: 90,
 	actions: {
 		updateGradDegree(newValueEvent) {
 			let newVal = newValueEvent.target.value;
