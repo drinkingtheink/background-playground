@@ -11,6 +11,7 @@ export default Component.extend({
 	color2: defaultColor2,
 	gradOpacity: defaultOpacity,
 	gradDegree: defaultDegree,
+	bgImgIndex: 0, 
 	actions: {
 		updateGradDegree(newValueEvent) {
 			let newVal = newValueEvent.target.value;
@@ -32,5 +33,9 @@ export default Component.extend({
 			let newVal = newValueEvent.target.value;
 			this.set('color2', newVal);
 		},
+		updateBgImgIndex() {
+			let randomInt = Math.floor(Math.random() * 4) + 1;
+			this.set('bgImgIndex', randomInt);
+		}
 	}	
 });

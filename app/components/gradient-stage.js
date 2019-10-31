@@ -1,5 +1,5 @@
 import Component from '@ember/component';
-import { computed, get } from '@ember/object';
+import { get } from '@ember/object';
 
 export default Component.extend({
 	generatedStyles: '',

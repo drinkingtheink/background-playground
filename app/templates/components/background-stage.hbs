@@ -7,7 +7,9 @@
 		@gradDegree={{gradDegree}}
 		>
 	</GradientStage>
-	<div class="background-image-stage panel"></div>
+	<BackgroundImageStage 
+		@bgImgIndex={{bgImgIndex}}
+	></BackgroundImageStage>
 </main>
 <section class="edit-panel">
 	<div class="edit-message edit-section">
@@ -70,7 +72,7 @@
 			onkeyup={{action "updateColor1"}}
 		>
 	</div>
-	<div class="edit-gradient-color1 edit-section">
+	<div class="edit-gradient-color2 edit-section">
 		<h4>2nd Gradient Color</h4>
 		<input 
 			type="text" 
@@ -79,5 +81,14 @@
 			value={{color2}}
 			onkeyup={{action "updateColor2"}}
 		>
+	</div>
+	<div class="edit-bg-img edit-section">
+		<h4>Background Image</h4>
+		<button 
+			id="bg-img" 
+			name="bg-img" 
+			value={{color1}}
+			onclick={{action "updateBgImgIndex"}}
+		>Refresh Image</button>
 	</div>
 </section>
