@@ -7,6 +7,7 @@ See how different overlapping effects can create beautiful, engaging background 
 Combine:
 * Gradient (colors/degree/opacity)
 * Background Image
+* Message
 
 ## [See it in action](https://background-playground.netlify.com/)
 

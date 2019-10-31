@@ -6,12 +6,13 @@ const defaultOpacity = .7;
 const defaultDegree = 90;
 
 export default Component.extend({
-	message: 'Compose Yourself a Lovely Background',
+	message: '\“Everything you can imagine is real.\” ― Pablo Picasso',
 	color1: defaultColor1,
 	color2: defaultColor2,
 	gradOpacity: defaultOpacity,
 	gradDegree: defaultDegree,
 	bgImgIndex: 1, 
+	linearPosition: true,
 	actions: {
 		updateGradDegree(newValueEvent) {
 			let newVal = newValueEvent.target.value;
@@ -36,6 +37,11 @@ export default Component.extend({
 		updateBgImgIndex() {
 			let randomInt = Math.floor(Math.random() * 5) + 1;
 			this.set('bgImgIndex', randomInt);
+		},
+		toggleGradientOrientation(pref) {
+			let currentOrientation = this.get('linearPosition');
+			let updatedOrientation = !currentOrientation;
+			this.set('linearPosition', updatedOrientation);
 		}
 	}	
 });

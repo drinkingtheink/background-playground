@@ -5,6 +5,7 @@
 		@color2={{color2}} 
 		@opacity={{gradOpacity}}
 		@gradDegree={{gradDegree}}
+		@linearPosition={{linearPosition}}
 		>
 	</GradientStage>
 	<BackgroundImageStage 
@@ -22,7 +23,15 @@
 			onkeyup={{action "updateMessage"}}
 		>
 	</div>
-	<div class="edit-gradient-degree edit-section">
+	<div class="edit-orientation edit-section">
+		<h4>Gradient Orientation</h4>
+		<button 
+			id="edit-orientation" 
+			name="edit-orientation" 
+			onclick={{action "toggleGradientOrientation"}}
+		>{{if linearPosition "Turn Radial" "Turn Linear"}}</button>
+	</div>
+	<div class="edit-gradient-degree edit-section {{unless linearPosition "disabled"}}">
 		<h4>Gradient Degree</h4>
 		<input 
 			type="number" 
@@ -78,7 +87,7 @@
 			onkeyup={{action "updateColor1"}}
 		>
 		<p class="info">* Use Color Name or Hex Value (including # symbol)</p>
-		<a class="info-link" href="http://www.colors.commutercreative.com/grid/" target="_blank">Good Resource</a>
+		<a class="info-link" href="http://www.colors.commutercreative.com/grid/" target="_blank">List of CSS color names</a>
 	</div>
 	<div class="edit-gradient-color2 edit-section">
 		<h4>2nd Gradient Color</h4>
@@ -90,7 +99,7 @@
 			onkeyup={{action "updateColor2"}}
 		>
 		<p class="info">* Use Color Name or Hex Value (including # symbol)</p>
-		<a class="info-link" href="http://www.colors.commutercreative.com/grid/" target="_blank">Good Resource</a>
+		<a class="info-link" href="http://www.colors.commutercreative.com/grid/" target="_blank">List of CSS color names</a>
 	</div>
 	<div class="edit-bg-img edit-section">
 		<h4>Background Image</h4>

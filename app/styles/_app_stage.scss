@@ -20,7 +20,7 @@
 
 .foreground {
 	z-index: 3;
-	padding-top: 1.5em;
+	padding-top: 2em;
 	font-size: 200%;
 	text-shadow: #000 1px 0 10px;
 }
@@ -54,6 +54,15 @@
 	input {
 		display: block;
 		margin: 0 auto 1em auto;
+	}
+
+	&.disabled {
+		opacity: .4;
+		
+		* {
+			pointer-events: none;
+			cursor: not-allowed;
+		}
 	}
 }
 
