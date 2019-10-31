@@ -8,6 +8,8 @@ Combine:
 * Gradient (colors/degree/opacity)
 * Background Image
 
+## [See it in action](https://background-playground.netlify.com/)
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
