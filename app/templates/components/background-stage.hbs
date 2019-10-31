@@ -40,9 +40,10 @@
 			name="gradient-degree-number" 
 			value={{gradDegree}}
 			onkeyup={{action "updateGradDegree"}}
+			step="10"
 		>
 	</div>
-	<div class="edit-gradient-degree edit-section">
+	<div class="edit-gradient-opacity edit-section">
 		<h4>Gradient Opacity</h4>
 		<input 
 			type="range" 
@@ -60,6 +61,7 @@
 			name="gradient-opacity-number" 
 			value={{gradOpacity}}
 			onkeyup={{action "updateGradOpacity"}}
+			step=".1"
 		>
 	</div>
 	<div class="edit-gradient-color1 edit-section">

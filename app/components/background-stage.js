@@ -34,7 +34,7 @@ export default Component.extend({
 			this.set('color2', newVal);
 		},
 		updateBgImgIndex() {
-			let randomInt = Math.floor(Math.random() * 4) + 1;
+			let randomInt = Math.floor(Math.random() * 5) + 1;
 			this.set('bgImgIndex', randomInt);
 		}
 	}	
