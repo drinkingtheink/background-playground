@@ -25,16 +25,6 @@
 	<div class="edit-gradient-degree edit-section">
 		<h4>Gradient Degree</h4>
 		<input 
-			type="range" 
-			id="gradient-degree" 
-			name="gradient-degree" 
-			min="0" 
-			max="360" 
-			step="10"
-			value={{gradDegree}}
-			onchange={{action "updateGradDegree"}}
-		>
-		<input 
 			type="number" 
 			id="gradient-degree-number" 
 			name="gradient-degree-number" 
@@ -44,19 +34,19 @@
 			min="0"
 			max="360"
 		>
+		<input 
+			type="range" 
+			id="gradient-degree" 
+			name="gradient-degree" 
+			min="0" 
+			max="360" 
+			step="10"
+			value={{gradDegree}}
+			onchange={{action "updateGradDegree"}}
+		>
 	</div>
 	<div class="edit-gradient-opacity edit-section">
 		<h4>Gradient Opacity</h4>
-		<input 
-			type="range" 
-			id="gradient-opacity" 
-			name="gradient-opacity" 
-			min="0" 
-			max="1" 
-			step=".1"
-			value={{gradOpacity}}
-			onchange={{action "updateGradOpacity"}}
-		>
 		<input 
 			type="number" 
 			id="gradient-opacity-number" 
@@ -66,6 +56,16 @@
 			step=".1"
 			max="1"
 			min="0"
+		>
+		<input 
+			type="range" 
+			id="gradient-opacity" 
+			name="gradient-opacity" 
+			min="0" 
+			max="1" 
+			step=".1"
+			value={{gradOpacity}}
+			onchange={{action "updateGradOpacity"}}
 		>
 	</div>
 	<div class="edit-gradient-color1 edit-section">
