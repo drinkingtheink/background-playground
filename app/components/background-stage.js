@@ -1,11 +1,16 @@
 import Component from '@ember/component';
 
+const defaultColor1 = 'red';
+const defaultColor2 = 'yellow';
+const defaultOpacity = .7;
+const defaultDegree = 90;
+
 export default Component.extend({
 	message: 'Compose Yourself a Lovely Background',
-	color1: 'white',
-	color2: 'red',
-	gradOpacity: .7,
-	gradDegree: 90,
+	color1: defaultColor1,
+	color2: defaultColor2,
+	gradOpacity: defaultOpacity,
+	gradDegree: defaultDegree,
 	actions: {
 		updateGradDegree(newValueEvent) {
 			let newVal = newValueEvent.target.value;
@@ -18,6 +23,14 @@ export default Component.extend({
 		updateMessage(newValueEvent) {
 			let newVal = newValueEvent.target.value;
 			this.set('message', newVal);
+		},
+		updateColor1(newValueEvent) {
+			let newVal = newValueEvent.target.value;
+			this.set('color1', newVal);
+		},
+		updateColor2(newValueEvent) {
+			let newVal = newValueEvent.target.value;
+			this.set('color2', newVal);
 		},
 	}	
 });
