@@ -20,8 +20,8 @@
 
 .foreground {
 	z-index: 3;
-	padding-top: 3em;
-	font-size: 250%;
+	padding-top: 1.5em;
+	font-size: 200%;
 	text-shadow: #000 1px 0 10px;
 }
 
@@ -38,15 +38,23 @@
 }
 
 .edit-panel {
+	margin-top: 1em;
 	display: flex;
 	justify-content: center;
 }
 
 .edit-section {
-	margin-right: 2em;
+	margin-right: .25em;
+	background: #eaeaea;
+	padding: 1em 1.5em;
+	text-align: center;
+
+	h4 {
+		margin-bottom: .5em;
+	}
 
 	input {
 		display: block;
-		margin-bottom: 1em;
+		margin: 0 auto 1em auto;
 	}
 }
