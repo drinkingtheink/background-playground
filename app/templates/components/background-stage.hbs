@@ -32,7 +32,7 @@
 			max="360" 
 			step="10"
 			value={{gradDegree}}
-			onkeyup={{action "updateGradDegree"}}
+			onchange={{action "updateGradDegree"}}
 		>
 		<input 
 			type="number" 
@@ -41,6 +41,8 @@
 			value={{gradDegree}}
 			onkeyup={{action "updateGradDegree"}}
 			step="10"
+			min="0"
+			max="360"
 		>
 	</div>
 	<div class="edit-gradient-opacity edit-section">
@@ -53,7 +55,7 @@
 			max="1" 
 			step=".1"
 			value={{gradOpacity}}
-			onkeyup={{action "updateGradOpacity"}}
+			onchange={{action "updateGradOpacity"}}
 		>
 		<input 
 			type="number" 
@@ -62,6 +64,8 @@
 			value={{gradOpacity}}
 			onkeyup={{action "updateGradOpacity"}}
 			step=".1"
+			max="1"
+			min="0"
 		>
 	</div>
 	<div class="edit-gradient-color1 edit-section">
