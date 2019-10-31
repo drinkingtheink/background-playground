@@ -31,9 +31,18 @@ div {
 
 }
 
+a,
+a:link {
+  color: #333;
+}
+
 .info {
   font-size: 65%;
   opacity: .6;
+}
+
+.info-link {
+  font-size: 65%;
 }
 
 input {
