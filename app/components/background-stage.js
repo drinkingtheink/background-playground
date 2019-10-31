@@ -11,7 +11,7 @@ export default Component.extend({
 	color2: defaultColor2,
 	gradOpacity: defaultOpacity,
 	gradDegree: defaultDegree,
-	bgImgIndex: 0, 
+	bgImgIndex: 1, 
 	actions: {
 		updateGradDegree(newValueEvent) {
 			let newVal = newValueEvent.target.value;
