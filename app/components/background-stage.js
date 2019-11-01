@@ -12,7 +12,7 @@ export default Component.extend({
 	gradOpacity: defaultOpacity,
 	gradDegree: defaultDegree,
 	bgImgIndex: 1, 
-	linearPosition: true,
+	linearOrientation: true,
 	actions: {
 		updateGradDegree(newValueEvent) {
 			let newVal = newValueEvent.target.value;
@@ -39,9 +39,9 @@ export default Component.extend({
 			this.set('bgImgIndex', randomInt);
 		},
 		toggleGradientOrientation(pref) {
-			let currentOrientation = this.get('linearPosition');
+			let currentOrientation = this.get('linearOrientation');
 			let updatedOrientation = !currentOrientation;
-			this.set('linearPosition', updatedOrientation);
+			this.set('linearOrientation', updatedOrientation);
 		}
 	}	
 });

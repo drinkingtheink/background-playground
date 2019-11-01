@@ -5,7 +5,7 @@
 		@color2={{color2}} 
 		@opacity={{gradOpacity}}
 		@gradDegree={{gradDegree}}
-		@linearPosition={{linearPosition}}
+		@linearOrientation={{linearOrientation}}
 		>
 	</GradientStage>
 	<BackgroundImageStage 
@@ -25,13 +25,14 @@
 	</div>
 	<div class="edit-orientation edit-section">
 		<h4>Gradient Orientation</h4>
+		<p>{{if linearOrientation "-- Linear --" "-- Radial --"}}</p>
 		<button 
 			id="edit-orientation" 
 			name="edit-orientation" 
 			onclick={{action "toggleGradientOrientation"}}
-		>{{if linearPosition "Turn Radial" "Turn Linear"}}</button>
+		>{{if linearOrientation "Turn Radial" "Turn Linear"}}</button>
 	</div>
-	<div class="edit-gradient-degree edit-section {{unless linearPosition "disabled"}}">
+	<div class="edit-gradient-degree edit-section {{unless linearOrientation "disabled"}}">
 		<h4>Gradient Degree</h4>
 		<input 
 			type="number" 
@@ -109,5 +110,6 @@
 			value={{color1}}
 			onclick={{action "updateBgImgIndex"}}
 		>Refresh Image</button>
+		<p class="info">* With thanks to <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
 	</div>
 </section>

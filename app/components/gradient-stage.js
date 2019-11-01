@@ -8,10 +8,10 @@ export default Component.extend({
 		const color2 = get(this, 'color2');
 		const opacity = get(this, 'opacity');
 		const gradDegree = get(this, 'gradDegree');
-		const linearPosition = get(this, 'linearPosition');
+		const linearOrientation = get(this, 'linearOrientation');
 		let newGradient;
 
-		if (linearPosition) {
+		if (linearOrientation) {
 			newGradient = `background: linear-gradient(${gradDegree}deg, ${color1} 0%, ${color2} 100%); opacity: ${opacity}`;
 		} else {
 			newGradient = `background: radial-gradient(${color1}, ${color2}); opacity: ${opacity}`;
