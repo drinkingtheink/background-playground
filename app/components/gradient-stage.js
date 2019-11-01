@@ -20,7 +20,7 @@ export default Component.extend({
 		this.set('generatedStyles', newGradient);
   },
   didReceiveAttrs() {
-	this._super(...arguments);
-	this.generateStyles();
+		this._super(...arguments);
+		this.generateStyles();
   }
 });
