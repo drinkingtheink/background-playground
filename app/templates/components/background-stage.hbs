@@ -116,6 +116,22 @@
 
 <section class="color-gallery">
 	{{#each-in colors as |color|}}
-		<div style="background-color:{{color}};" class="color">{{color}}</div>
+		<div style="background-color:{{color}};" class="color">
+			<span class="color-name">{{color}}</span>
+			<section class="color-options">
+				<button 
+					id="edit-color1" 
+					name="edit-color1" 
+					value={{color}}
+					onclick={{action "updateColor1"}}
+				>Make Color 1</button>
+				<button 
+					id="edit-color2" 
+					name="edit-color2" 
+					value={{color}}
+					onclick={{action "updateColor2"}}
+				>Make Color 2</button>
+			</section>
+		</div>
 	{{/each-in}}
 </section>

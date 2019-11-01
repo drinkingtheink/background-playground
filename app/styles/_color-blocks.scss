@@ -8,4 +8,19 @@
   padding: .5em 1em;
   border: 2px solid white;
   transition: all .2s;
+
+  span {
+  	padding: .25em;
+  	transition: .2s all;
+  }
+
+  &:hover {
+  	span {
+  		background-color: white;
+  	}
+  }
+}
+
+.color-options {
+	padding-top: .5em;
 }
