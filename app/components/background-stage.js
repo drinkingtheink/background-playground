@@ -4,7 +4,7 @@ import { colorNames } from '../data/color-names';
 const defaultColor1 = 'red';
 const defaultColor2 = 'yellow';
 const defaultOpacity = .7;
-const defaultDegree = 90;
+const defaultDegree = 180;
 
 export default Component.extend({
 	message: `“Everything you can imagine is real.” ― Pablo Picasso`,
