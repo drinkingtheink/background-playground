@@ -114,8 +114,10 @@
 	</div>
 </section>
 
+<h2>Color Options</h2>
+
 <section class="color-gallery">
 	{{#each-in colors as |color|}}
-		<div>Hello, {{color}}!</div>
+		<div style="background-color:{{color}};" class="color">{{color}}</div>
 	{{/each-in}}
-</div>
+</section>
