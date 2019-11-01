@@ -112,11 +112,17 @@
 	</div>
 </section>
 
-<h2>Color Options</h2>
+<h2>Gradient Color Options</h2>
 
 <section class="color-gallery">
 	{{#each-in colors as |color|}}
 		<div style="background-color:{{color}};" class="color">
+			{{#if (eq color color1)}}
+				<span class="active-color-indicator one">Color 1</span>
+			{{/if}}
+			{{#if (eq color color2)}}
+				<span class="active-color-indicator two">Color 2</span>
+			{{/if}}
 			<span class="color-name">{{color}}</span>
 			<section class="color-options">
 				<button 

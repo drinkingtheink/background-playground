@@ -45,5 +45,5 @@ export default Component.extend({
 			let updatedOrientation = !currentOrientation;
 			this.set('linearOrientation', updatedOrientation);
 		}
-	}	
+	}
 });

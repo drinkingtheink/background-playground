@@ -6,8 +6,10 @@
 	background-color: white;
 	box-shadow: 2px 3px 36px 0px rgba(0,0,0,0.3);
 	overflow: hidden;
-	position: relative;
+	position: sticky;
+	top: 0;
 	color: white;
+	z-index: 100;
 }
 
 .panel {
@@ -49,6 +51,11 @@
 
 	h4 {
 		margin: 0 0 .5em 0;
+		padding: 0;
+	}
+
+	p {
+		margin: 0 0 1em 0;
 		padding: 0;
 	}
 
