@@ -1,6 +1,6 @@
 # Background Playground
 
-![Background Playground](https://gdurl.com/uyf5)
+![Background Playground](https://gdurl.com/jYTJ)
 
 See how different overlapping effects can create beautiful, engaging background imagery.
 
