@@ -1,9 +1,9 @@
 import Component from '@ember/component';
 import { colorNames } from '../data/color-names';
 
-const defaultColor1 = 'red';
-const defaultColor2 = 'yellow';
-const defaultOpacity = .7;
+const defaultColor1 = '#09385f';
+const defaultColor2 = '#2f94b3';
+const defaultOpacity = .9;
 const defaultDegree = 180;
 
 export default Component.extend({
@@ -12,7 +12,7 @@ export default Component.extend({
 	color2: defaultColor2,
 	gradOpacity: defaultOpacity,
 	gradDegree: defaultDegree,
-	bgImgIndex: 1, 
+	bgImgIndex: 3, 
 	linearOrientation: true,
 	colors: colorNames,
 	actions: {
