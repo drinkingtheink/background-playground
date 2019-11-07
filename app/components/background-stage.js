@@ -5,15 +5,18 @@ const defaultColor1 = '#09385f';
 const defaultColor2 = '#2f94b3';
 const defaultOpacity = .9;
 const defaultDegree = 180;
+const defaultMessage = `“Everything you can imagine is real.” ― Pablo Picasso`;
+const defaultBgImgIndex = 3;
+const defaultLinearOrientation = true;
 
 export default Component.extend({
-	message: `“Everything you can imagine is real.” ― Pablo Picasso`,
+	message: defaultMessage,
 	color1: defaultColor1,
 	color2: defaultColor2,
 	gradOpacity: defaultOpacity,
 	gradDegree: defaultDegree,
-	bgImgIndex: 3, 
-	linearOrientation: true,
+	bgImgIndex: defaultBgImgIndex, 
+	linearOrientation: defaultLinearOrientation,
 	colors: colorNames,
 	actions: {
 		updateGradDegree(newValueEvent) {
@@ -44,6 +47,17 @@ export default Component.extend({
 			let currentOrientation = this.get('linearOrientation');
 			let updatedOrientation = !currentOrientation;
 			this.set('linearOrientation', updatedOrientation);
+		},
+		resetToDefault() {
+			this.setProperties({
+				message: defaultMessage,
+				color1: defaultColor1,
+				color2: defaultColor2,
+				gradOpacity: defaultOpacity,
+				gradDegree: defaultDegree,
+				bgImgIndex: defaultBgImgIndex,
+				linearOrientation: defaultLinearOrientation
+			})
 		}
 	}
 });
