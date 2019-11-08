@@ -13,6 +13,16 @@
     <link integrity="" rel="stylesheet" href="{{rootURL}}assets/background-playground.css">
     <meta property="og:image" content="https://gdurl.com/jYTJ" />
     {{content-for "head-footer"}}
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-26397133-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-26397133-4');
+    </script>    
   </head>
   <body>
     {{content-for "body"}}
